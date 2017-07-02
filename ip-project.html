@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IP Domain Lookup</title>
+    <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script> -->
+    <!-- Leaflet files -->
+    <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+            <h2 class="title">Domain Locator</h2>
+    </div>
+        <div class="container-left">
+            <div class="form">
+                <form>
+                    <!-- <label for="ip-input">Enter IP / Domain to look up</label><br> -->
+                    <input type="text" id="ip-input" placeholder="Enter IP address or domain">
+                    <button type="button" id="go-button">GO! </button>
+                </form>
+            </div>
+            <button type="button" id="toggle-map">Switch To Google Maps</button>
+            <div class="details">
+                <h2>Lookup Report</h2>
+                <p id="intro">Enter an IP address or domain into the form and hit 'Go!' to see where in the world that server resides.</p>
+                <div id="search-result"></div>
+                <button type="button" id="clear">Clear Map Data</button>
+            </div>
+        </div>
+        <div class="container-map">
+          <div id="map"></div>
+          <div class="hide" id="map-google"></div>
+        </div>
+        <!-- <div class="footer clear"></div> -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiZATedPDtLXHNLTsq3J2dYaQSJzCNBE4">
+    </script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
+<!-- &callback=initMap -->
+<!-- webpack, gulp -->
+
+
